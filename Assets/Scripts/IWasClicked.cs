@@ -5,8 +5,9 @@ using TMPro;
 public class IWasClicked : MonoBehaviour
 {
 
-
     public TMP_Text buttonText;
+
+
 
     public void onClick()
     {
@@ -17,10 +18,10 @@ public class IWasClicked : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (buttonText != null)
-        {
+        //if (buttonText != null)
+        //{
 
-        }
+        //}
         
     }
 
