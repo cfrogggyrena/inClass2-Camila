@@ -13,16 +13,13 @@ public class TutorialManager : MonoBehaviour
 
     private string[] instructions =
     {
-        "Welcome! You can use WASD to move",
-        "You can also use space to jump (im lying)",
-        "Collect the coins to wins (there is no coins, youre trapped!)"
+        "Welcome! You can use WASD to move and c to change cameras",
+        "You can T-bag your enemies with left shift!",
+        "Press K for punching and L for kicking"
     };
 
     void Start()
     {
-        //only doing this to restart playerpref after testing. 
-        //PlayerPrefs.DeleteKey("TutorialDone");
-
 
         if (PlayerPrefs.GetInt("TutorialDone", 0) == 1) 
         {
@@ -37,8 +34,6 @@ public class TutorialManager : MonoBehaviour
     //function for the next instruction text
     public void NextInstruction()
     {
-        //for audio
-        //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>().PlayOneShot(clickSound);
 
 
         currentStep++; //step text increases (goes to the next) 
@@ -57,4 +52,5 @@ public class TutorialManager : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
 }
