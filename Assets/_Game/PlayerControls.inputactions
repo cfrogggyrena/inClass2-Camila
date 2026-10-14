@@ -94,7 +94,18 @@
                 {
                     "name": "",
                     "id": "9e7af557-bd13-4cee-a25c-4dc6133f4d7d",
-                    "path": "<Touchscreen>/primaryTouch/press",
+                    "path": "<Touchscreen>/{Forward}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f61e1fd2-4b77-4448-8c87-f64a2f73dff0",
+                    "path": "<Touchscreen>/{Back}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

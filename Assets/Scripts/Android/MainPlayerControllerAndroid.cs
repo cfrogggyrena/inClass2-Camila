@@ -2,8 +2,9 @@ using System;
 using System.Diagnostics;
 using System.Numerics;
 using UnityEngine;
-using UnityEngine.InputSystem.EnhancedTouch;
 
+
+using UnityEngine.InputSystem.EnhancedTouch;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 
 [RequireComponent(typeof(CharacterController))] //requires it to work
@@ -48,18 +49,18 @@ public class MainPlayerControllerAndroid : MonoBehaviour
 
                 if (Mathf.Abs(x) == 0 && Mathf.Abs(y) == 0)
                 {
-                    direction = "Tapped";
+                    directions = "Tapped";
 
                 }
                 else if (Math.Abs(x) > Mathf.Abs(y))
                 {
-                    direction = x > 0 ? "Right" : "Left";
+                    directions = x > 0 ? "Right" : "Left";
                 }
                 else
                 {
-                    direction = y > 0 ? "Up" : "Down";
+                    directions = y > 0 ? "Up" : "Down";
                 }
-                UnityEngine.Debug.Log($"Mobile input {direction}");
+                UnityEngine.Debug.Log($"Mobile input {directions}");
             }
 
             UnityEngine.Debug.Log($"Mobile input {touch.screenPosition}");
