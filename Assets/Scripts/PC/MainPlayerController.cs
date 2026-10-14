@@ -31,6 +31,9 @@ public class MainPlayerController : MonoBehaviour
 
     }
 
+
+
+
     // Update is called once per frame
     void Update()
     {
@@ -53,5 +56,6 @@ public class MainPlayerController : MonoBehaviour
         {
             animator.SetBool(ANI_Walk, false);
         }
+
     }
 }

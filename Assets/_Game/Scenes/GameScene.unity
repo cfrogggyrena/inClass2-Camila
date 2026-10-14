@@ -237,7 +237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230260089}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2599983, y: 0.5236562, z: -0.17170963, w: 0.79290664}
+  m_LocalRotation: {x: 0.23213887, y: 0.6338224, z: -0.20783372, w: 0.70794487}
   m_LocalPosition: {x: -3.8043633, y: 5, z: 0.8168738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -332,7 +332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0045791147, y: 0.97946584, z: -0.022390654, w: 0.20031066}
+  m_LocalRotation: {x: 0.001260594, y: 0.99821687, z: -0.022819309, w: 0.055143926}
   m_LocalPosition: {x: -2.8043633, y: 3, z: 4.8168736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1085,8 +1085,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TutorialManager
   tutorialPanel: {fileID: 1599682551}
   tutorialText: {fileID: 1203811712}
-  clickSound: {fileID: 8300000, guid: a6b1b42d92335476489ae2d40eb2a7e3, type: 3}
-  audioSource: {fileID: 330585549}
 --- !u!4 &1196020955
 Transform:
   m_ObjectHideFlags: 0
@@ -1526,8 +1524,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TutorialManager
   tutorialPanel: {fileID: 1599682551}
   tutorialText: {fileID: 1203811712}
-  clickSound: {fileID: 0}
-  audioSource: {fileID: 0}
 --- !u!1 &1412697812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +1699,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1547703408}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1547703410}
   m_SourcePrefab: {fileID: 100100000, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
 --- !u!1 &1547703402 stripped
 GameObject:
@@ -1741,7 +1740,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547703402}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a27b862e09dc94ffe9093fe25ffc4198, type: 3}
   m_Name: 
@@ -1794,6 +1793,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6051e56e5d5314f1fbed1c4fa630f3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationController
+--- !u!114 &1547703410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547703402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dfac1e09bf7b447f88eec9086dc0086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainPlayerControllerAndroid
 --- !u!1 &1599682551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,7 +2001,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855837679}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.004579115, y: 0.97946584, z: -0.022390654, w: 0.20031066}
+  m_LocalRotation: {x: 0.0012605936, y: 0.99821687, z: -0.022819305, w: 0.055143926}
   m_LocalPosition: {x: -2.8043633, y: 3, z: 4.8168736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
