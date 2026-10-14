@@ -4,12 +4,12 @@ using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 
-using UnityEngine.InputSystem.EnhancedTouch.Touch;
+using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 
 [RequireComponent(typeof(CharacterController))] //requires it to work
 public class MainPlayerControllerAndroid : MonoBehaviour
 {
-    private Vector2 touchStartPosition, touchEndPosition;
+    private UnityEngine.Vector2 touchStartPosition, touchEndPosition;
     private string directions;
 
 
@@ -59,10 +59,10 @@ public class MainPlayerControllerAndroid : MonoBehaviour
                 {
                     direction = y > 0 ? "Up" : "Down";
                 }
-                Debug.Log($"Mobile input {direction}");
+                UnityEngine.Debug.Log($"Mobile input {direction}");
             }
 
-            Debug.Log($"Mobile input {touch.screenPosition}");
+            UnityEngine.Debug.Log($"Mobile input {touch.screenPosition}");
 
         }
 
