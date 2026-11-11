@@ -237,7 +237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230260089}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.23213887, y: 0.6338224, z: -0.20783372, w: 0.70794487}
+  m_LocalRotation: {x: 0.2599983, y: 0.5236562, z: -0.17170964, w: 0.79290664}
   m_LocalPosition: {x: -3.8043633, y: 5, z: 0.8168738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -332,7 +332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.001260594, y: 0.99821687, z: -0.022819309, w: 0.055143926}
+  m_LocalRotation: {x: 0.0045791166, y: 0.97946584, z: -0.022390658, w: 0.20031069}
   m_LocalPosition: {x: -2.8043633, y: 3, z: 4.8168736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -999,7 +999,7 @@ Transform:
   m_GameObject: {fileID: 783654745}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: -34}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1659,6 +1659,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6615165312655902727, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
       propertyPath: m_Name
       value: Mouse
@@ -1678,10 +1682,10 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: db8b2ceadcadd43d382174e7922ef441, type: 2}
+      objectReference: {fileID: 9100000, guid: 1517fbd700df749d78a562bcab5171ea, type: 2}
     - target: {fileID: 5866666021909216657, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1698,10 +1702,10 @@ PrefabInstance:
       addedObject: {fileID: 1547703406}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1547703408}
+      addedObject: {fileID: 1547703409}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1547703410}
+      addedObject: {fileID: 1547703408}
   m_SourcePrefab: {fileID: 100100000, guid: 6aefb4e4dec4a4978a0f8875399615ca, type: 3}
 --- !u!1 &1547703402 stripped
 GameObject:
@@ -1763,7 +1767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
-  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 480dbcb48616642b9a5ed7e322b7f711, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -1777,7 +1781,7 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Touch
+  m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -1793,7 +1797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6051e56e5d5314f1fbed1c4fa630f3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationController
---- !u!114 &1547703410
+--- !u!114 &1547703409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1802,9 +1806,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1547703402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dfac1e09bf7b447f88eec9086dc0086, type: 3}
+  m_Script: {fileID: 11500000, guid: a0ab29e2277ed40a287480654f7ff9c9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MainPlayerControllerAndroid
+  m_EditorClassIdentifier: Assembly-CSharp::RootMotionPlayerController
+  rotationSpeed: 10
+  gravity: -9.81
 --- !u!1 &1599682551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,7 +2007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855837679}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0012605936, y: 0.99821687, z: -0.022819305, w: 0.055143926}
+  m_LocalRotation: {x: 0.004579116, y: 0.97946584, z: -0.022390658, w: 0.2003107}
   m_LocalPosition: {x: -2.8043633, y: 3, z: 4.8168736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

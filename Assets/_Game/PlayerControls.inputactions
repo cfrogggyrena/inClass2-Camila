@@ -74,46 +74,6 @@
                     "isPartOfComposite": true
                 }
             ]
-        },
-        {
-            "name": "Touch",
-            "id": "8329e089-9a5d-4e0a-adfb-5f9e7b6894ed",
-            "actions": [
-                {
-                    "name": "Move",
-                    "type": "Button",
-                    "id": "a1c35080-3696-44b2-8c72-366017bb2564",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false,
-                    "priority": 0
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "9e7af557-bd13-4cee-a25c-4dc6133f4d7d",
-                    "path": "<Touchscreen>/{Forward}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f61e1fd2-4b77-4448-8c87-f64a2f73dff0",
-                    "path": "<Touchscreen>/{Back}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
         }
     ],
     "controlSchemes": [
@@ -128,17 +88,6 @@
                 },
                 {
                     "devicePath": "<Mouse>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        },
-        {
-            "name": "Touchscreen",
-            "bindingGroup": "Touchscreen",
-            "devices": [
-                {
-                    "devicePath": "<Touchscreen>",
                     "isOptional": false,
                     "isOR": false
                 }
